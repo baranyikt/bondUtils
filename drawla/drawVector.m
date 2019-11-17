@@ -140,7 +140,7 @@ box(1:2:2*d-1) = -1; % -1-by-1 box
 box(2:2:2*d) = 1;
 maxLength = sqrt(max(diag(V'*V)));
 box = box*maxLength;
-axis(box); axis square;
+%axis(box); axis square;
 grid on
-drawAxes(d, 'k', axLabels)
+%drawAxes(d, 'k', axLabels)
 set(gca, 'NextPlot', holdon); % restore the NextPlot property
